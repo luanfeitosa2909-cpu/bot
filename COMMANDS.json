@@ -1,0 +1,332 @@
+[
+  {
+    "name": "addcoins",
+    "description": "Adiciona coins ao saldo de um membro (Admin apenas).",
+    "path": "Comandos/Administracao/addcoins.js"
+  },
+  {
+    "name": "adddino",
+    "description": "🦖 Adiciona um dinossauro ao seu inventário.",
+    "path": "Comandos/Administracao/adicionarDino.js"
+  },
+  {
+    "name": "antilink",
+    "description": "Ative ou desative o sistema de antilink no servidor.",
+    "path": "Comandos/Administracao/antilink.js"
+  },
+  {
+    "name": "anunciar",
+    "description": "Anuncie algo em uma embed.",
+    "path": "Comandos/Administracao/anunciar.js"
+  },
+  {
+    "name": "aposta",
+    "description": "Cria uma aposta entre dois lutadores (com dinossauros).",
+    "path": "Comandos/Administracao/aposta.js"
+  },
+  {
+    "name": "avaliacaostaff",
+    "description": "Envia a mensagem de avaliação de staff no canal.",
+    "path": "Comandos/Administracao/avaliacaostaff.js"
+  },
+  {
+    "name": "ban",
+    "description": "Banir um usuário e bloquear sua SteamID para registros futuros.",
+    "path": "Comandos/Administracao/ban.js"
+  },
+  {
+    "name": "bugs",
+    "description": "🐞 Envia o painel para reportar bugs no servidor",
+    "path": "Comandos/Administracao/bug.js"
+  },
+  {
+    "name": "cargo_botao",
+    "description": "Ganhe cargos clicando nos botões.",
+    "path": "Comandos/Administracao/cargo_botao.js"
+  },
+  {
+    "name": "cacada",
+    "description": "Ativa ou desativa o modo Caçada (tempo em call com bônus)",
+    "path": "Comandos/Administracao/caçada.js"
+  },
+  {
+    "name": "clear",
+    "description": "Limpe o canal de texto",
+    "path": "Comandos/Administracao/clear.js"
+  },
+  {
+    "name": "coinsrank",
+    "description": "📊 Exibe o ranking dos usuários com mais coins",
+    "path": "Comandos/Administracao/coinsrank.js"
+  },
+  {
+    "name": "consultarlogs",
+    "description": "Consulta os logs de verificação de SteamID64",
+    "path": "Comandos/Administracao/consultar.js"
+  },
+  {
+    "name": "conteudo",
+    "description": "📥 Exibe o painel de inscrição para criadores de conteúdo",
+    "path": "Comandos/Administracao/conteudo.js"
+  },
+  {
+    "name": "cupom",
+    "description": "Cria ou reutiliza um cupom de desconto",
+    "path": "Comandos/Administracao/cupom.js"
+  },
+  {
+    "name": "dm",
+    "description": "Envie uma mensagem no privado de um usuário.",
+    "path": "Comandos/Administracao/dm.js"
+  },
+  {
+    "name": "enquete",
+    "description": "**Resultados:**\\n${resultados}\\n\\n${textoVencedor}",
+    "path": "Comandos/Administracao/enquete.js"
+  },
+  {
+    "name": "evento",
+    "description": "📣 Envia um anúncio de evento personalizado.",
+    "path": "Comandos/Administracao/evento.js"
+  },
+  {
+    "name": "finalizaraposta",
+    "description": "Finaliza a aposta ativa e distribui prêmios (Admin).",
+    "path": "Comandos/Administracao/finalizaraposta.js"
+  },
+  {
+    "name": "finalizaraposta_id",
+    "description": "Finaliza uma aposta específica pelo messageId e distribui prêmios (Admin).",
+    "path": "Comandos/Administracao/finalizaraposta_id.js"
+  },
+  {
+    "name": "formulario",
+    "description": "📥 Exibe o painel de inscrição para se tornar staff",
+    "path": "Comandos/Administracao/formulario.js"
+  },
+  {
+    "name": "infouser",
+    "description": "Pesquisar informações de um usuário pela SteamID ou Discord ID",
+    "path": "Comandos/Administracao/infouser.js"
+  },
+  {
+    "name": "relatorio_usuario",
+    "description": "📈 Veja quem um usuário convidou e se os membros ainda estão ativos.",
+    "path": "Comandos/Administracao/inviteslog.js"
+  },
+  {
+    "name": "lock",
+    "description": "Bloqueie um canal de texto",
+    "path": "Comandos/Administracao/lock.js"
+  },
+  {
+    "name": "loja",
+    "description": "🛒 Abra a loja para comprar produtos com seus coins",
+    "path": "Comandos/Administracao/loja.js"
+  },
+  {
+    "name": "ocorrencia",
+    "description": "Registrar uma ocorrência para um jogador.",
+    "path": "Comandos/Administracao/ocorrencia.js"
+  },
+  {
+    "name": "painelfixar",
+    "description": "Envia e fixa o painel do servidor. Atualizado automaticamente.",
+    "path": "Comandos/Administracao/painelfixar.js"
+  },
+  {
+    "name": "patrocinio",
+    "description": "💎 Sistema completo de patrocínio do servidor",
+    "path": "Comandos/Administracao/patrocinio.js"
+  },
+  {
+    "name": "regras",
+    "description": "Exibe o painel de Regras e Informações do servidor",
+    "path": "Comandos/Administracao/regras.js"
+  },
+  {
+    "name": "relatoriogeral",
+    "description": "📊 Relatório completo de saúde e uso do bot",
+    "path": "Comandos/Administracao/relatorio.js"
+  },
+  {
+    "name": "removecoins",
+    "description": "Remove coins do saldo de um membro",
+    "path": "Comandos/Administracao/removecoins.js"
+  },
+  {
+    "name": "removerdino",
+    "description": "🗑️ Remove um dinossauro do seu inventário.",
+    "path": "Comandos/Administracao/removerDino.js"
+  },
+  {
+    "name": "removersteamid",
+    "description": "Remove a SteamID64 de um usuário da database (Admin apenas).",
+    "path": "Comandos/Administracao/removersteamid.js"
+  },
+  {
+    "name": "resetarcoins",
+    "description": "Reseta ou apaga os coins de todos os usuários.",
+    "path": "Comandos/Administracao/resetcoins.js"
+  },
+  {
+    "name": "say",
+    "description": "Faz o bot enviar uma mensagem em embed (via formulário)",
+    "path": "Comandos/Administracao/say.js"
+  },
+  {
+    "name": "slot",
+    "description": "👮 Comando para STAFF gerenciar slots de dinos de um jogador.",
+    "path": "Comandos/Administracao/slot.js"
+  },
+  {
+    "name": "solicitargrow",
+    "description": "📈 Solicite um Grow em dinossauros com verificação ativa!",
+    "path": "Comandos/Administracao/solicitargrow.js"
+  },
+  {
+    "name": "solicitarslay",
+    "description": "⚔️ Solicite um Slay em dinossauros com verificação ativa!",
+    "path": "Comandos/Administracao/solicitarslay.js"
+  },
+  {
+    "name": "sorteio",
+    "description": "Cria um sorteio estilizado no servidor (Loritta style)",
+    "path": "Comandos/Administracao/sorteio.js"
+  },
+  {
+    "name": "ticket",
+    "description": "🎫 Exibe o painel de tickets para suporte",
+    "path": "Comandos/Administracao/ticket.js"
+  },
+  {
+    "name": "transcript",
+    "description": "📄 Gera um registro HTML com todas as mensagens do canal atual.",
+    "path": "Comandos/Administracao/transcript.js"
+  },
+  {
+    "name": "unban",
+    "description": "Desbanir um usuário e liberar sua SteamID",
+    "path": "Comandos/Administracao/unban.js"
+  },
+  {
+    "name": "unlock",
+    "description": "Desbloqueie um canal",
+    "path": "Comandos/Administracao/unlock.js"
+  },
+  {
+    "name": "updateid",
+    "description": "Atualiza o Discord ID ou Steam ID de um usuário no banco",
+    "path": "Comandos/Administracao/updateid.js"
+  },
+  {
+    "name": "valor",
+    "description": "💰 Adiciona uma quantia gasta para calcular o nível de apoiador.",
+    "path": "Comandos/Administracao/valor.js"
+  },
+  {
+    "name": "verificacao",
+    "description": "Inicie sua verificação de SteamID para desbloquear benefícios!",
+    "path": "Comandos/Administracao/verificacao.js"
+  },
+  {
+    "name": "verlog",
+    "description": "Mostra as últimas linhas do log do servidor The Isle.",
+    "path": "Comandos/Administracao/verlogs.js"
+  },
+  {
+    "name": "verocorrencias",
+    "description": "Visualiza todas as ocorrências registradas de um jogador.",
+    "path": "Comandos/Administracao/verocorrencia.js"
+  },
+  {
+    "name": "listartudo",
+    "description": "Lista TODO o servidor via SSH a partir de uma pasta específica (paginado).",
+    "path": "Comandos/Administracao/verpasta.js"
+  },
+  {
+    "name": "social",
+    "description": "Interaja socialmente com outro membro ou veja uma waifu aleatória",
+    "path": "Comandos/Diversao/social.js"
+  },
+  {
+    "name": "limpardb",
+    "description": "🧹 Remove campos com 'tempo' ou 'entrada' em todos os documentos (admin apenas)",
+    "path": "Comandos/Owner/limpardb.js"
+  },
+  {
+    "name": "verificar-recompensa",
+    "description": "🎯 Veja quanto você está ganhando por hora em call (Caçada ativa ou não)",
+    "path": "Comandos/Owner/vercacada.js"
+  },
+  {
+    "name": "verdb",
+    "description": "📂 Consulte o conteúdo da database (somente administradores)",
+    "path": "Comandos/Owner/verdb.js"
+  },
+  {
+    "name": "botinfo",
+    "description": "Mostra informações detalhadas sobre o bot.",
+    "path": "Comandos/Utilidade/botinfo.js"
+  },
+  {
+    "name": "callrank",
+    "description": "Mostra o Top 10 usuários com mais tempo em call",
+    "path": "Comandos/Utilidade/callrank.js"
+  },
+  {
+    "name": "combate",
+    "description": "Simule um combate entre dois dinossauros!",
+    "path": "Comandos/Utilidade/combate.js"
+  },
+  {
+    "name": "dino",
+    "description": "Veja informações detalhadas sobre um dinossauro",
+    "path": "Comandos/Utilidade/dino.js"
+  },
+  {
+    "name": "help",
+    "description": "Central de ajuda com todos os comandos do servidor",
+    "path": "Comandos/Utilidade/help.js"
+  },
+  {
+    "name": "ninho",
+    "description": "Cria um ninho de dinossauro interativo",
+    "path": "Comandos/Utilidade/ninho.js"
+  },
+  {
+    "name": "painel",
+    "description": "🎮 Exibe um painel interativo com seus dados e slots.",
+    "path": "Comandos/Utilidade/painel.js"
+  },
+  {
+    "name": "perfil",
+    "description": "Veja o perfil completo de um usuário",
+    "path": "Comandos/Utilidade/perfil.js"
+  },
+  {
+    "name": "ping",
+    "description": "Veja o ping do bot.",
+    "path": "Comandos/Utilidade/ping.js"
+  },
+  {
+    "name": "serverinfo",
+    "description": "Exibe informações detalhadas sobre o servidor.",
+    "path": "Comandos/Utilidade/serverinfo.js"
+  },
+  {
+    "name": "sugestao",
+    "description": "Envie uma mensagem para sugestões no servidor (apenas admins)",
+    "path": "Comandos/Utilidade/sugestao.js"
+  },
+  {
+    "name": "traduzir",
+    "description": "「Utilidade」Traduz uma palavra ou frase de sua escolha.",
+    "path": "Comandos/Utilidade/traduzir.js"
+  },
+  {
+    "name": "userinfo",
+    "description": "Veja informações de um usuário.",
+    "path": "Comandos/Utilidade/userinfo.js"
+  }
+]
