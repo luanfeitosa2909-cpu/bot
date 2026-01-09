@@ -486,9 +486,9 @@ app.post('/api/news', requireAdmin, (req,res)=>{
   res.json({ok:true, item});
 });
 app.put('/api/news/:id', requireAdmin, (req,res)=>{
-  const id = Number(req.params.id);
+  const id = req.params.id;
   const data = readNews();
-  const idx = data.findIndex(x=>x.id===id);
+  const idx = data.findIndex(x=>String(x.id)===String(id));
   if(idx===-1) return res.status(404).json({ok:false});
   const updated = Object.assign({}, data[idx], req.body);
   // Set author to current admin (update on edit)
@@ -501,9 +501,9 @@ app.put('/api/news/:id', requireAdmin, (req,res)=>{
   res.json({ok:true, item:data[idx]});
 });
 app.delete('/api/news/:id', requireAdmin, (req,res)=>{
-  const id = Number(req.params.id);
+  const id = req.params.id;
   const data = readNews();
-  const idx = data.findIndex(x=>x.id===id);
+  const idx = data.findIndex(x=>String(x.id)===String(id));
   if(idx===-1) return res.status(404).json({ok:false});
   const removed = data.splice(idx,1)[0];
   writeNews(data);
