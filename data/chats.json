@@ -1,0 +1,50 @@
+[
+  {
+    "id": "chat_1767814766956_943nb2",
+    "name": "Anônimo",
+    "email": null,
+    "createdAt": "2026-01-07T19:39:26.956Z",
+    "messages": [
+      {
+        "from": "user",
+        "text": "oi",
+        "ts": "2026-01-07T19:39:31.995Z"
+      },
+      {
+        "from": "admin",
+        "text": "oioi",
+        "ts": "2026-01-07T19:40:10.648Z"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "id": "chat_1767816088483_seb0lc",
+    "name": "Anônimo",
+    "email": null,
+    "createdAt": "2026-01-07T20:01:28.483Z",
+    "messages": [],
+    "status": "open"
+  },
+  {
+    "id": "chat_1767816091434_hd3fj8",
+    "name": "Anônimo",
+    "email": null,
+    "createdAt": "2026-01-07T20:01:31.434Z",
+    "messages": [
+      {
+        "from": "user",
+        "text": "oi",
+        "ts": "2026-01-07T20:01:33.477Z"
+      },
+      {
+        "from": "admin",
+        "text": "oi",
+        "ts": "2026-01-07T20:02:06.577Z",
+        "author": "GoldZera"
+      }
+    ],
+    "status": "open",
+    "assignedAdmin": "GoldZera"
+  }
+]

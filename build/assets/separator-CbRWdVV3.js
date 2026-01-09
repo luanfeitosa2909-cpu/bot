@@ -1,0 +1,6 @@
+import{c as v,j as s,y as u,g as h}from"./index-D5VgfkZI.js";import{r as l}from"./react-vendor-CoRTCUxX.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const P=v("ArrowLeft",[["path",{d:"m12 19-7-7 7-7",key:"1l729n"}],["path",{d:"M19 12H5",key:"x3x0zl"}]]);var x=["a","button","div","form","h2","h3","img","input","label","li","nav","ol","p","select","span","svg","ul"],N=x.reduce((a,r)=>{const t=u(`Primitive.${r}`),o=l.forwardRef((i,e)=>{const{asChild:p,...n}=i,f=p?t:r;return typeof window<"u"&&(window[Symbol.for("radix-ui")]=!0),s.jsx(f,{...n,ref:e})});return o.displayName=`Primitive.${r}`,{...a,[r]:o}},{}),w="Separator",c="horizontal",y=["horizontal","vertical"],d=l.forwardRef((a,r)=>{const{decorative:t,orientation:o=c,...i}=a,e=S(o)?o:c,n=t?{role:"none"}:{"aria-orientation":e==="vertical"?e:void 0,role:"separator"};return s.jsx(N.div,{"data-orientation":e,...n,...i,ref:r})});d.displayName=w;function S(a){return y.includes(a)}var m=d;const O=l.forwardRef(({className:a,orientation:r="horizontal",decorative:t=!0,...o},i)=>s.jsx(m,{ref:i,decorative:t,orientation:r,className:h("shrink-0 bg-border",r==="horizontal"?"h-[1px] w-full":"h-full w-[1px]",a),...o}));O.displayName=m.displayName;export{P as A,O as S};

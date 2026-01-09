@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "Como me inscrevo em uma corrida?",
+    "answer": "Vá até a página de Corridas, escolha a prova desejada e clique em 'Inscrever-se'. Você precisa estar logado com sua conta para concluir a inscrição.",
+    "category": "Inscrições"
+  },
+  {
+    "id": 2,
+    "question": "Posso cancelar minha inscrição?",
+    "answer": "Sim — se o organizador permitir, haverá um botão 'Cancelar inscrição' na página da corrida até o prazo definido nas regras da prova.",
+    "category": "Inscrições"
+  },
+  {
+    "id": 3,
+    "question": "Quais são os requisitos de hardware mínimos para participar?",
+    "answer": "Recomendamos pelo menos um PC com 8GB RAM, processador quad-core e placa dedicada; volante/joystick não é obrigatório, mas melhora a experiência.",
+    "category": "Técnico"
+  },
+  {
+    "id": 4,
+    "question": "O site aceita pilotos convidados/sem conta?",
+    "answer": "Não — você deve criar uma conta para gerenciar inscrições, histórico e perfil. Criar conta é grátis e rápido.",
+    "category": "Conta"
+  },
+  {
+    "id": 5,
+    "question": "Como recupero minha senha?",
+    "answer": "Use a função 'Esqueci minha senha' na página de login; enviaremos instruções para o e-mail cadastrado.",
+    "category": "Conta"
+  },
+  {
+    "id": 6,
+    "question": "Onde encontro as regras completas de uma corrida?",
+    "answer": "Cada evento possui um bloco 'Requisitos' e 'Regulamento' na página de detalhes da corrida; revise antes de se inscrever.",
+    "category": "Regras"
+  },
+  {
+    "id": 7,
+    "question": "Como faço upload de replay ou prova de resultado?",
+    "answer": "Siga as instruções do organizador na descrição da corrida; normalmente solicitamos link do replay ou arquivo em um canal especificado.",
+    "category": "Eventos"
+  },
+  {
+    "id": 8,
+    "question": "Tenho problemas de latência durante a corrida — o que fazer?",
+    "answer": "Verifique sua conexão (preferível cabo), feche programas em segundo plano, e selecione servidores próximos. Se persistir, reporte ao suporte com logs.",
+    "category": "Técnico"
+  },
+  {
+    "id": 9,
+    "question": "Como funciona a pontuação dos campeonatos?",
+    "answer": "Cada campeonato tem sua tabela de pontuação descrita na página do campeonato; normalmente pontos são atribuídos por posição de chegada.",
+    "category": "Campeonatos"
+  },
+  {
+    "id": 10,
+    "question": "Posso representar uma equipe? Como adiciono minha equipe ao perfil?",
+    "answer": "No seu perfil há um campo 'Equipe' que você pode editar. Para equipes oficiais, entre em contato com a organização para registro formal.",
+    "category": "Conta"
+  },
+  {
+    "id": 11,
+    "question": "Quais formas de pagamento são aceitas?",
+    "answer": "Atualmente apenas pagamentos via transferência ou serviços especificados pelos organizadores; verifique a página do evento para instruções.",
+    "category": "Pagamentos"
+  },
+  {
+    "id": 12,
+    "question": "Como reporto um bug no site?",
+    "answer": "Abra um ticket via formulário de contato ou envie um e-mail para suporte@brasilsimracing.com.br com passos para reproduzir o problema.",
+    "category": "Suporte"
+  },
+  {
+    "id": 13,
+    "question": "Onde encontro estatísticas dos pilotos?",
+    "answer": "As estatísticas ficam no perfil do piloto e nas páginas de standings por campeonato.",
+    "category": "Conta"
+  },
+  {
+    "id": 14,
+    "question": "Como criar uma notícia ou evento (sou organizador)?",
+    "answer": "Organizadores autorizados usam o painel admin para criar notícias e corridas; contate a equipe para ganhar permissões.",
+    "category": "Admin"
+  },
+  {
+    "id": 15,
+    "question": "Vocês transmitem corridas ao vivo? Onde assitir?",
+    "answer": "Sim — links para transmissão aparecem na página do evento e nas redes sociais do Brasil Sim Racing.",
+    "category": "Streaming"
+  },
+  {
+    "id": 16,
+    "question": "Como funcionam as penalidades?",
+    "answer": "Penalidades são aplicadas conforme o regulamento do evento — exemplos: tempo adicional, perda de posição ou desclassificação.",
+    "category": "Regras"
+  },
+  {
+    "id": 17,
+    "question": "Posso alterar meu nick depois de inscrito?",
+    "answer": "Alterações de nickname no perfil refletem no sistema, mas para eventos em andamento fale com a organização antes de alterar nome exibido.",
+    "category": "Conta"
+  },
+  {
+    "id": 18,
+    "question": "Como funciona o sistema de conquistas?",
+    "answer": "Conquistas são concedidas automaticamente por critérios (vitórias, pódios, participação). Consulte a página de perfil para ver suas conquistas.",
+    "category": "Geral"
+  },
+  {
+    "id": 19,
+    "question": "Qual a política de privacidade dos dados?",
+    "answer": "Respeitamos sua privacidade. Consulte a política de privacidade disponível no rodapé do site para mais detalhes.",
+    "category": "Legal"
+  },
+  {
+    "id": 20,
+    "question": "Como reporto comportamento antidesportivo?",
+    "answer": "Use o formulário de contato fornecendo evidências (replays, timestamps) para que a equipe investigue.",
+    "category": "Suporte"
+  },
+  {
+    "id": 21,
+    "question": "O que é necessário para se tornar administrador/organizador?",
+    "answer": "Organizadores são selecionados pela equipe. Envie um e-mail com seu histórico e propostas para avaliação.",
+    "category": "Admin"
+  },
+  {
+    "id": 22,
+    "question": "Onde encontro resultados anteriores?",
+    "answer": "Resultados e standings antigos ficam na seção de Standings ou no arquivo de notícias do evento.",
+    "category": "Eventos"
+  },
+  {
+    "id": 23,
+    "question": "Como sincronizo configurações do volante/controles?",
+    "answer": "As configurações variam por sim; recomendamos exportar perfis do jogo ou seguir guias do fabricante.",
+    "category": "Técnico"
+  },
+  {
+    "id": 24,
+    "question": "Existe um canal oficial de Discord?",
+    "answer": "Sim — o link está disponível na página de Contato e na barra 'Conecte-se Conosco'. Para anúncios e suporte, participe do nosso Discord.",
+    "category": "Comunidade"
+  },
+  {
+    "id": 25,
+    "question": "Como participo de campeonatos por equipes?",
+    "answer": "Inscreva sua equipe no evento ou entre em contato com o organizador para registrar a equipe oficialmente.",
+    "category": "Campeonatos"
+  },
+  {
+    "id": 26,
+    "question": "Quais são as regras de comportamento no chat/stream?",
+    "answer": "Mantenha respeito e evite linguagem ofensiva. Violações podem resultar em banimento das plataformas.",
+    "category": "Comunidade"
+  },
+  {
+    "id": 27,
+    "question": "Como altero minhas preferências de notificação?",
+    "answer": "No perfil há uma seção de notificações onde você pode habilitar/desabilitar e-mails e alertas.",
+    "category": "Conta"
+  },
+  {
+    "id": 28,
+    "question": "É possível transferir inscrição para outro piloto?",
+    "answer": "Transferências dependem do regulamento do evento; contate a organização com antecedência para solicitar.",
+    "category": "Inscrições"
+  },
+  {
+    "id": 29,
+    "question": "Como são calculados tempos e classificação?",
+    "answer": "Os tempos são registrados pelo servidor do jogo; verificamos replays em caso de disputa.",
+    "category": "Eventos"
+  },
+  {
+    "id": 30,
+    "question": "Como faço para aparecer no ranking global?",
+    "answer": "Participe de eventos oficiais e acumule pontos no sistema de standings para subir no ranking.",
+    "category": "Geral"
+  },
+  {
+    "id": 31,
+    "question": "O que devo fazer em caso de crash do jogo durante a prova?",
+    "answer": "Capture logs e replay, comunique imediatamente a organização e envie evidências pelo formulário de suporte.",
+    "category": "Técnico"
+  },
+  {
+    "id": 32,
+    "question": "Como posso sugerir melhorias para o site?",
+    "answer": "Envie sugestões pelo formulário de contato ou participe do Discord para discussões com a comunidade.",
+    "category": "Geral"
+  },
+  {
+    "id": 33,
+    "question": "Existe limite de participantes por corrida?",
+    "answer": "Sim — cada evento define um limite máximo de pilotos; verifique a seção de detalhes da corrida.",
+    "category": "Inscrições"
+  },
+  {
+    "id": 34,
+    "question": "Onde encontro os termos de uso?",
+    "answer": "Os Termos de Uso estão disponíveis no rodapé do site junto com a Política de Privacidade.",
+    "category": "Legal"
+  },
+  {
+    "id": 35,
+    "question": "Como vincular minha conta Steam?",
+    "answer": "Use o botão de login com Steam na página de login para vincular sua conta automaticamente.",
+    "category": "Conta"
+  },
+  {
+    "id": 36,
+    "question": "Posso reportar fraudes ou uso de cheat?",
+    "answer": "Sim — encaminhe provas e logs via suporte; investigaremos e aplicaremos sanções quando necessário.",
+    "category": "Suporte"
+  },
+  {
+    "id": 37,
+    "question": "Como funciona a integração com o servidor do jogo?",
+    "answer": "Nossas corridas usam integração via API/UDP com servidores dedicados; detalhes técnicos para organizadores estão no painel admin.",
+    "category": "Técnico"
+  },
+  {
+    "id": 38,
+    "question": "Existe suporte para diferentes idiomas?",
+    "answer": "Por enquanto o site opera em Português; traduções futuras serão avaliadas conforme demanda.",
+    "category": "Geral"
+  },
+  {
+    "id": 39,
+    "question": "Como entrar em contato para mídia/imprensa?",
+    "answer": "Use o contato de Imprensa na página de Contato ou envie e-mail para imprensa@brasilsimracing.com.br.",
+    "category": "Imprensa"
+  },
+  {
+    "id": 40,
+    "question": "Posso baixar dados históricos do campeonato?",
+    "answer": "Dados agregados podem ser disponibilizados mediante pedido; contate a equipe indicando necessidades e formatos desejados.",
+    "category": "Eventos"
+  }
+]

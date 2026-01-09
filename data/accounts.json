@@ -1,0 +1,96 @@
+[
+  {
+    "username": "steam_76561198419559590",
+    "displayName": "GoldZera",
+    "createdAt": "2026-01-04",
+    "steam": {
+      "id": "76561198419559590",
+      "displayName": "GoldZera",
+      "avatar": "https://avatars.steamstatic.com/4ab3db0761bdfb0b02c32de00e0924e1270cf81a_full.jpg"
+    },
+    "stats": {
+      "wins": 1,
+      "podiums": 1,
+      "points": 1
+    },
+    "email": "",
+    "role": "user",
+    "lastLogin": "2026-01-04",
+    "isActive": true
+  },
+  {
+    "username": "steam_76561199217542987",
+    "displayName": "Arthurヅ",
+    "createdAt": "2026-01-05T18:02:22.353Z",
+    "steam": {
+      "id": "76561199217542987",
+      "displayName": "Arthurヅ",
+      "avatar": "https://avatars.steamstatic.com/0c26361ac7da0b1275afc814d9336b340c1243fa_full.jpg"
+    },
+    "stats": {
+      "wins": 0,
+      "podiums": 0,
+      "points": 0
+    }
+  },
+  {
+    "username": "steam_76561199248024032",
+    "displayName": "Éverton Machado",
+    "createdAt": "2026-01-05T18:48:10.824Z",
+    "steam": {
+      "id": "76561199248024032",
+      "displayName": "Éverton Machado",
+      "avatar": "https://avatars.steamstatic.com/a12e9f457a3d86d24177614e9ee5bfc783243b28_full.jpg"
+    },
+    "stats": {
+      "wins": 0,
+      "podiums": 0,
+      "points": 0
+    }
+  },
+  {
+    "username": "steam_76561198032078501",
+    "displayName": "wezzy",
+    "createdAt": "2026-01-05T18:49:04.916Z",
+    "steam": {
+      "id": "76561198032078501",
+      "displayName": "wezzy",
+      "avatar": "https://avatars.steamstatic.com/e1147cb16295a5bc852fbe6574c27d4226fcb71f_full.jpg"
+    },
+    "stats": {
+      "wins": 0,
+      "podiums": 0,
+      "points": 0
+    }
+  },
+  {
+    "username": "steam_76561199274676041",
+    "displayName": "matheusfn",
+    "createdAt": "2026-01-05T18:51:32.078Z",
+    "steam": {
+      "id": "76561199274676041",
+      "displayName": "matheusfn",
+      "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
+    },
+    "stats": {
+      "wins": 0,
+      "podiums": 0,
+      "points": 0
+    }
+  },
+  {
+    "username": "steam_76561199256439948",
+    "displayName": "toddyn",
+    "createdAt": "2026-01-05T19:21:17.069Z",
+    "steam": {
+      "id": "76561199256439948",
+      "displayName": "toddyn",
+      "avatar": "https://avatars.steamstatic.com/93cb6472c07724ecd5802340553c2bb167dad975_full.jpg"
+    },
+    "stats": {
+      "wins": 0,
+      "podiums": 0,
+      "points": 0
+    }
+  }
+]

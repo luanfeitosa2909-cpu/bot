@@ -1,0 +1,42 @@
+{
+  "id": "settings-1",
+  "siteName": "Test Site Merged",
+  "siteDescription": "Plataforma de gerenciamento de corridas virtuais",
+  "theme": "system",
+  "defaultLanguage": "pt-BR",
+  "maintenanceMode": false,
+  "registrationEnabled": true,
+  "emailVerificationRequired": false,
+  "defaultRaceSettings": {
+    "maxParticipants": 20,
+    "defaultLaps": 35,
+    "defaultDuration": "60 minutos"
+  },
+  "udpConfiguration": {
+    "defaultListenAddress": "0.0.0.0:11095",
+    "defaultSendAddress": "0.0.0.0:12095",
+    "defaultRefreshInterval": 1000
+  },
+  "socialMedia": {
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "youtube": "",
+    "discord": ""
+  },
+  "contactInfo": {
+    "email": "contato@simracingboost.com",
+    "phone": "",
+    "address": ""
+  },
+  "seoSettings": {
+    "metaTitle": "Brasil Sim Racing",
+    "metaDescription": "Plataforma de gerenciamento de corridas virtuais",
+    "metaKeywords": "sim racing, corrida virtual, esports"
+  },
+  "createdAt": "2026-01-03T18:16:00.000Z",
+  "updatedAt": "2026-01-07T19:39:59.905Z",
+  "siteLogo": "",
+  "maintenanceMessage": "Estamos realizando manutenção no sistema. Algumas funcionalidades podem estar temporariamente indisponíveis. Obrigado pela compreensão!",
+  "maxUsers": ""
+}
