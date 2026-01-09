@@ -35,17 +35,35 @@ const NewsDetailPage = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
+    let mounted = true;
     fetch('/api/news').then(r => r.json()).then(data => {
+      if (!mounted) return;
       setAllNews(data);
       const found = data.find((n: NewsItem) => String(n.id) === String(id));
       if (found) {
-        setNews(found);
-        setViews((found.views || 0) + 1);
-        setLikes(Math.floor(Math.random() * 100) + 10);
-        setShares(Math.floor(Math.random() * 30) + 3);
+        // increment view on server and get updated item
+        fetch(`/api/news/${found.id}/view`, { method: 'POST' }).then(r=>r.json()).then(res => {
+          const item = (res && res.item) ? res.item : found;
+          setNews(item);
+          setViews(item.views || 0);
+          setLikes(item.likes || 0);
+          setShares(item.shares || 0);
+          // check session to determine if current user already liked
+          fetch('/api/session').then(s=>s.json()).then(sess => {
+            if (sess && sess.user && item.likedBy) setLiked(item.likedBy.includes(sess.user.username));
+          }).catch(()=>{});
+        }).catch(err => {
+          console.error('view increment failed', err);
+          // fallback to local data
+          setNews(found);
+          setViews(found.views || 0);
+          setLikes(found.likes || 0);
+          setShares(found.shares || 0);
+        });
       }
       setLoading(false);
     }).catch(e => { console.error(e); setLoading(false); });
+    return () => { mounted = false; };
   }, [id]);
 
   useEffect(() => {
@@ -67,7 +85,20 @@ const NewsDetailPage = () => {
     return allNews.filter(n => String(n.id) !== String(id)).sort((a, b) => (b.views || 0) - (a.views || 0)).slice(0, 5);
   }, [allNews, id]);
 
-  const handleLike = () => { setLiked(!liked); setLikes(liked ? likes - 1 : likes + 1); };
+  const handleLike = async () => {
+    // require login
+    try {
+      const res = await fetch(`/api/news/${id}/like`, { method: 'POST', credentials: 'include' });
+      if (res.status === 401) return alert('Você precisa estar logado para curtir.');
+      const j = await res.json();
+      if (j && j.item) {
+        setNews(j.item);
+        setLikes(j.item.likes || 0);
+        const sess = await (await fetch('/api/session')).json().catch(()=>null);
+        setLiked(sess && sess.user ? (j.item.likedBy || []).includes(sess.user.username) : false);
+      }
+    } catch (e) { console.error('like failed', e); alert('Erro ao curtir'); }
+  };
   const handleShare = async () => {
     try {
       if (navigator.share) {
@@ -76,7 +107,8 @@ const NewsDetailPage = () => {
         await navigator.clipboard.writeText(window.location.href);
         alert('Link copiado para a área de transferência!');
       }
-      setShares(shares + 1);
+      // tell server about share
+      fetch(`/api/news/${id}/share`, { method: 'POST' }).then(r=>r.json()).then(j=>{ if (j && j.item) setShares(j.item.shares || (shares+1)); }).catch(()=>setShares(s=>s+1));
     } catch (e) { console.error(e); }
   };
 
@@ -165,7 +197,10 @@ const NewsDetailPage = () => {
             <Card className="glass-card">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <Avatar className="h-16 w-16"><AvatarImage src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${news.author}`} /><AvatarFallback>{(news.author || 'A').substring(0, 2).toUpperCase()}</AvatarFallback></Avatar>
+                  <Avatar className="h-16 w-16">
+                    <AvatarImage src={news.authorAvatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${news.author}`} />
+                    <AvatarFallback>{(news.author || 'A').substring(0, 2).toUpperCase()}</AvatarFallback>
+                  </Avatar>
                   <div><h3 className="font-semibold">{news.author || 'BSR News'}</h3><p className="text-xs text-muted-foreground">Autor</p></div>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">Profissional de sim racing com experiência em jornalismo.</p>

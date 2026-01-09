@@ -475,15 +475,64 @@ app.get('/api/news', (req,res)=>{ res.json(readNews()); });
 app.post('/api/news', requireAdmin, (req,res)=>{
   const data = readNews();
   const item = req.body;
-  item.id = (data.reduce((m,it)=>Math.max(m, it.id||0),0) || 0) + 1;
+  // Create a string ID to be consistent with existing data
+  item.id = `news-${Date.now()}`;
+  // Initialize metrics
+  item.views = 0;
+  item.likes = 0;
+  item.shares = 0;
+  item.likedBy = [];
   // Set author to current admin
   const adminUsername = req.session.user.username;
   const accounts = readAccounts();
   const adminAccount = accounts.find(a => a.username === adminUsername);
   item.author = adminAccount?.displayName || adminUsername;
+  item.authorAvatar = adminAccount?.steam?.avatar || null;
   data.unshift(item);
   writeNews(data);
   res.json({ok:true, item});
+});
+
+// Increment view count (public)
+app.post('/api/news/:id/view', (req, res) => {
+  const id = req.params.id;
+  const data = readNews();
+  const idx = data.findIndex(x => String(x.id) === String(id));
+  if (idx === -1) return res.status(404).json({ ok: false, message: 'Not found' });
+  data[idx].views = (data[idx].views || 0) + 1;
+  writeNews(data);
+  return res.json({ ok: true, item: data[idx] });
+});
+
+// Increment share count (public)
+app.post('/api/news/:id/share', (req, res) => {
+  const id = req.params.id;
+  const data = readNews();
+  const idx = data.findIndex(x => String(x.id) === String(id));
+  if (idx === -1) return res.status(404).json({ ok: false, message: 'Not found' });
+  data[idx].shares = (data[idx].shares || 0) + 1;
+  writeNews(data);
+  return res.json({ ok: true, item: data[idx] });
+});
+
+// Toggle like (requires auth)
+app.post('/api/news/:id/like', requireAuth, (req, res) => {
+  const id = req.params.id;
+  const username = req.session.user.username;
+  const data = readNews();
+  const idx = data.findIndex(x => String(x.id) === String(id));
+  if (idx === -1) return res.status(404).json({ ok: false, message: 'Not found' });
+  data[idx].likedBy = data[idx].likedBy || [];
+  const found = data[idx].likedBy.find(u => u === username);
+  if (found) {
+    // unlike
+    data[idx].likedBy = data[idx].likedBy.filter(u => u !== username);
+  } else {
+    data[idx].likedBy.push(username);
+  }
+  data[idx].likes = (data[idx].likedBy || []).length;
+  writeNews(data);
+  return res.json({ ok: true, item: data[idx] });
 });
 app.put('/api/news/:id', requireAdmin, (req,res)=>{
   const id = req.params.id;
@@ -496,6 +545,7 @@ app.put('/api/news/:id', requireAdmin, (req,res)=>{
   const accounts = readAccounts();
   const adminAccount = accounts.find(a => a.username === adminUsername);
   updated.author = adminAccount?.displayName || adminUsername;
+  updated.authorAvatar = adminAccount?.steam?.avatar || null;
   data[idx] = updated;
   writeNews(data);
   res.json({ok:true, item:data[idx]});
